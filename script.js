@@ -14,7 +14,7 @@ const addTodoFunc=(item)=>{
   alert('Invalid Todo')
   return
 }else{
-  todoItemsArr=[...todoItemsArr,item];
+  todoItemsArr=[...todoItemsArr,item.trim()];
   localStorage.setItem('todoItems',JSON.stringify(todoItemsArr));
 addTodoValue.value='';
 // display Items
