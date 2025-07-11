@@ -19,7 +19,7 @@ body{
     padding-inline: 10px;
 }
 .Todo-Container{
-  max-width: 700px;
+  max-width: 900px;
   width: 100%;
   /* background-color: red; */
   border: 2px solid #ffffff;
@@ -38,8 +38,8 @@ body{
 gap: 20px;
 }
 .Add-Todo-Item input{
-  width: 75%;
-  min-height: 40px;
+  width: 80%;
+  height: 50px;
   border-radius: 4px;
   outline: none;
   border: 2px solid #ffffff;
@@ -49,12 +49,12 @@ gap: 20px;
   font-size: 18px;
 }
 .Add-Todo-Item button{
-  width: 25%;
-  min-height: 40px;
+  width: 20%;
+  height: 50px;
   border-radius: 4px;
   border: none;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
     background-color: rgb(0, 216, 0);
     transition: 0.3s;
@@ -75,8 +75,8 @@ gap: 20px;
   gap: 20px;
 }
 .Todo-Item input{
-   width: 75%;
-  min-height: 40px;
+   width: 80%;
+height: 50px;
   border-radius: 4px;
   outline: none;
   border: 2px solid #ffffff;
@@ -86,19 +86,20 @@ gap: 20px;
   font-size: 18px;
 }
 .Todo-Item .Edit-Delete-Btn{
-    width: 25%;
-  min-height: 40px;
+    width: 20%;
+height: 50px;
   border-radius: 4px;
 }
 .Edit-Delete-Btn{
   display: flex;
-  gap: 7px;
+  
+  gap: 5px;
 }
 .Edit-Delete-Btn button{
-  width: 50%;
+  width: 100%;
    border: none;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
     transition: 0.3s;
       border-radius: 4px;
@@ -119,3 +120,42 @@ color: #ffffff;
   background-color: rgb(255, 0, 0);
 }
 
+@media (max-width:550px) {
+  .Todo-Container{
+    padding: 10px;
+  }
+  .Add-Todo-Item{
+    gap: 5px;
+  }
+.Add-Todo-Item input{
+  width: 80%;
+  border-radius: 4px;
+  outline: none;
+  border: 2px solid #ffffff;
+  padding-inline: 10px;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 18px;
+}
+.Add-Todo-Item button{
+font-size: 15px;
+}
+.Todo-Item{
+  gap: 5px;
+}
+.Edit-Delete-Btn{
+  flex-wrap: wrap;
+}
+.Edit-Delete-Btn button{
+  width: 100%;
+  font-size: 12px;
+}
+.Todo-Item input{
+  height: 50px;
+}
+.Todo-Items-container{
+  margin-top: 20px;
+    gap: 15px;
+}
+
+}
